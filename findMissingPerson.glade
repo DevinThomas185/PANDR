@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="popup">
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkAspectFrame">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">Pandr_logo_small.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkFixed" id="fixed">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">190</property>
+            <property name="y">122</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="popup1">
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkAspectFrame">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">Pandr_logo_small.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed3">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="resultLbl">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">label</property>
+          </object>
+          <packing>
+            <property name="x">151</property>
+            <property name="y">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed4">
+            <property name="width_request">32</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">190</property>
+            <property name="y">122</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkAspectFrame">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">Pandr_logo_small.png</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkEntry" id="firstNameTxt">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="input_purpose">alpha</property>
+            <signal name="changed" handler="on_firstNameTxt_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">94</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="fileInput">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+          </object>
+          <packing>
+            <property name="x">139</property>
+            <property name="y">266</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="descrTxt">
+            <property name="width_request">250</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="truncate_multiline">True</property>
+            <property name="caps_lock_warning">False</property>
+            <signal name="changed" handler="on_descrTxt_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">376</property>
+            <property name="y">143</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="firstNameLbl">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">First name:</property>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">75</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="imageLbl">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Image:</property>
+          </object>
+          <packing>
+            <property name="x">5</property>
+            <property name="y">244</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="descrLbl">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Description:</property>
+          </object>
+          <packing>
+            <property name="x">367</property>
+            <property name="y">65</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="findButton">
+            <property name="label" translatable="yes">Search from database</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_findButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">249</property>
+            <property name="y">345</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lastNameLbl">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Last name:</property>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">155</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="lastNameTxt">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="input_purpose">alpha</property>
+            <signal name="changed" handler="on_lastNameTxt_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">177</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">PANDR FIND</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Bold 10"/>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="scale" value="3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">222</property>
+            <property name="y">-3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

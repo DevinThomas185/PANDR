@@ -1,0 +1,15 @@
+CC      = gcc 
+CFLAGS  = -Wall -g -D_POSIX_SOURCE -DEFAULT_SOURCE -std=c99
+
+all: PANDRAdd PANDRFind
+
+PANDRAdd: addMissingPersonGUI.c dbHandler.o
+		$(CC) -g -Wall -rdynamic $^ -o $@ `pkg-config --cflags --libs gtk+-3.0 glib-2.0 gdk-3.0` -lsqlite3
+
+PANDRFind: findMissingPersonGUI.c dbHandler.o NLP.o corpusTree.o strList.o facialRecognitionAPI.o
+		$(CC) -g -Wall -rdynamic $^ -o $@ `pkg-config --cflags --libs gtk+-3.0 glib-2.0 gdk-3.0` -lsqlite3 -lcjson -lcurl
+
+%.o: %.c %.h
+
+clean: 
+		rm -f *.o PANDRAdd PANDRFind
